@@ -1,0 +1,30 @@
+Agisci come un esperto sviluppatore Frontend. Voglio evolvere il codice della mia Web App "Diario Scolastico" trasformandola in una Single Page Application (SPA) moderna e responsive.
+
+Requisiti Tecnici e Funzionali:
+
+1. Struttura a due sezioni (mostra/nascondi tramite JavaScript):
+   - Schermata Home: Deve contenere il riepilogo delle statistiche (contatori), la barra di ricerca e la lista degli impegni filtrata.
+   - Schermata Aggiungi: Un'interfaccia pulita con il form di inserimento (Materia, Data, Tipo: Compito/Verifica/Evento, Descrizione).
+
+2. Sistema di Statistiche (Dashboard):
+   - Crea due contatori visibili in Home: 
+     - "Da fare": Somma di compiti non completati + verifiche ed eventi futuri.
+     - "Completati/Passati": Somma di compiti segnati come fatti + verifiche ed eventi la cui data è antecedente a oggi.
+
+3. Barra di Ricerca:
+   - Implementa un campo di input in Home che filtri in tempo reale la lista degli impegni cercando parole chiave nella Materia o nella Descrizione.
+
+4. Logica Differenziata per le Caselle di Controllo (Checkbox):
+   - Per i "Compiti": La checkbox serve a segnarli come "Completati". Una volta spuntati, il compito sparisce dalla lista Home.
+   - Per le "Verifiche": Aggiungi una checkbox dedicata con la dicitura "Studiato". Se spuntata, l'elemento deve mostrare un feedback visivo (es. un'icona o un cambio di colore), ma la verifica DEVE restare visibile in lista fino a quando la data non sarà passata.
+
+5. Logica di Visualizzazione e Pulizia Automatica:
+   - Verifiche ed Eventi: Devono sparire automaticamente dalla lista solo quando la data è passata, indipendentemente dalla spunta "Studiato".
+   - Tutti gli elementi passati o completati devono continuare a essere conteggiati nelle statistiche "Completati/Passati".
+
+6. Navigazione e Design:
+   - Inserisci una barra di navigazione fissa (stile mobile) per passare tra "Home" e "Aggiungi".
+   - Usa un design moderno con CSS (stile minimalista, angoli arrotondati, ombre leggere).
+   - Usa il localStorage per salvare tutti i dati in modo permanente sul browser.
+
+Fornisci tutto il codice (HTML, CSS e JavaScript) in un unico blocco.
